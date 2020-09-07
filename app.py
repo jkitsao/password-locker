@@ -56,12 +56,11 @@ def copy_credential(site_name):
 
 def main():
 	print(' ')
-	# print('Hi there welcome to password locker 2.0 by kitsao')
-	print("\033[1;33;35m Hi there welcome to password locker 2.0 by kitsao  \n")
+	print('********** Hi there welcome to password locker 2.0 by kitsao **********')
 	while True:
 		print(' ')
 		print("*"*60)
-		print('Below are these codes to navigate: \n ca-Create an Account \n li-Log In \n ex-Exit')
+		print('BELOW ARE THE CODES TO NAVIGATE: \n ca-Create an Account \n li-Log In \n ex-Exit')
 		short_code = input('Enter a choice: ').lower().strip()
 		if short_code == 'ex':
 			break
