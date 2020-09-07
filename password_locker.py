@@ -1,7 +1,6 @@
 #! /usr/bin/env python3
 import pyperclip
 from user_credentials import User, Credential
-
 def create_user(fname,lname,password):
 	'''
 	Function to create a new user account
@@ -53,23 +52,15 @@ def copy_credential(site_name):
 	
 	return Credential.copy_credential(site_name)
 
-class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'    
+  
 
 def main():
 	print(' ')
-	print('Hi there welcome to password locker 2.0 by kitsao' + bcolors.ENDC)
+	print('Hi there welcome to password locker 2.0 by kitsao')
 	while True:
 		print(' ')
 		print("*"*60)
-		print('Use these codes to navigate: \n ca-Create an Account \n li-Log In \n ex-Exit')
+		print('Below are these codes to navigate: \n ca-Create an Account \n li-Log In \n ex-Exit')
 		short_code = input('Enter a choice: ').lower().strip()
 		if short_code == 'ex':
 			break
