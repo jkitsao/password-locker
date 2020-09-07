@@ -27,7 +27,7 @@ def generate_password():
 	'''
 	Function to generate a password automatically
 	'''
-	gen_pass = Credential.generate_password()
+	gen_pass = Credential.generate_password(0)
 	return gen_pass
 
 def create_credential(user_name,site_name,account_name,password):
@@ -53,9 +53,19 @@ def copy_credential(site_name):
 	
 	return Credential.copy_credential(site_name)
 
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'    
+
 def main():
 	print(' ')
-	print('Hi there welcome to password locker 2.0 by kitsao')
+	print('Hi there welcome to password locker 2.0 by kitsao' + bcolors.ENDC)
 	while True:
 		print(' ')
 		print("*"*60)
