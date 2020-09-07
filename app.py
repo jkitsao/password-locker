@@ -56,7 +56,8 @@ def copy_credential(site_name):
 
 def main():
 	print(' ')
-	print('Hi there welcome to password locker 2.0 by kitsao')
+	# print('Hi there welcome to password locker 2.0 by kitsao')
+	print("\033[1;33;35m Hi there welcome to password locker 2.0 by kitsao  \n")
 	while True:
 		print(' ')
 		print("*"*60)
